@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+//<<<<<<< HEAD
 // ConsoleApplication2.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
@@ -44,7 +44,7 @@ void affiche(int e, int f, int g, int h) {
 	std::cout << e << "/" << f << ">>>" << g << "/" << h << std::endl;
 
 }
-=======
+//=======
 
 
 
@@ -70,4 +70,4 @@ int simplifie(int c, int d) {
 	return (c / d);
 }
 
->>>>>>> origin/dev
+//>>>>>>> origin/dev
