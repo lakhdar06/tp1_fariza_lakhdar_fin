@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ConsoleApplication2.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
@@ -43,3 +44,30 @@ void affiche(int e, int f, int g, int h) {
 	std::cout << e << "/" << f << ">>>" << g << "/" << h << std::endl;
 
 }
+=======
+
+
+
+int PGDC(int a, int b) {
+	
+	if (a == 0)
+		return b;
+	else if ((a % 2 == 0) && (b % 2 == 0))
+		return 2 * PGDC(a / 2, b / 2);
+	else if ((a % 2 != 0) && (b % 2 == 0))
+		return PGDC(a, b / 2);
+	else if ((a % 2 == 0) && (b % 2 != 0))
+		return PGDC(a / 2, b);
+	else {
+		if ((a % 2 != 0) && (b % 2 != 0) && (a > b))
+		return PGDC((a - b) / 2, b);
+	else if ((a % 2 != 0) && (b % 2 != 0) && (a < b))
+		return PGDC((b - a) / 2, a);
+	}
+}
+int simplifie(int c, int d) {
+
+	return (c / d);
+}
+
+>>>>>>> origin/dev
